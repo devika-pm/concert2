@@ -1,0 +1,201 @@
+*{
+    padding:0px;
+    margin:0px;
+    text-decoration: none;
+    list-style: none; 
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Merriweather', serif;
+}
+nav{
+    background: rgb(0,0,0,0.4);
+    height:80px;
+    width:100%;
+    position: absolute;
+}
+label.logo{
+    color: beige;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+   float:right;
+   margin-right: 20px;
+   
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px;
+
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+     padding: 7px 13px; 
+    
+    text-transform: uppercase;
+
+}
+a:hover{
+    background: aquamarine;
+    
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+}
+@media (max-width: 900px)
+{
+    label.logo{
+        font-size:30px;
+        padding-left: 50px;
+
+
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+    
+
+
+}
+@media (max-width:855px)
+{
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:rgb(0, 0,0,0.4);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover{
+        color: #9aa4ff;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+    
+
+section{
+    width:100%;
+    height: 100vh;
+    background-image:url("https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/12/30232040/live-concerts.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.container{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    
+} 
+.hea{
+    font-size:50px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+.para{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.act{
+    position: absolute;
+}
+#mar{
+    margin: 20px 0px;
+}
+/* .pic{
+
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: row;
+flex-wrap: nowrap;
+    
+    
+}
+.pic>div{
+    width: 10%;
+    
+   
+} */
+.pic{
+   
+    /* height: 100vh; */
+    display: flex;
+    /* flex-wrap: nowrap; */
+    justify-content:space-evenly;
+    margin:30px 0px;
+    /* margin-left: 150px; */
+    /* padding: 10rem; */
+    /* margin:10rem 0px; */
+    
+    
+    
+    
+}
+.footer{
+    background-color: rgb(85, 85, 231);
+    padding: 10rem;
+    margin:50px 0px;
+    width: 100%;
+    
+}
+.bo{
+    margin:30px 0px;
+    background-color: rgb(85, 85, 231);
+    padding: 10rem;
+    
+
+}
+@media(max-width:800px){
+    .hea{
+        font-size: 20px;
+    }
+    .para{
+        font-size: 1rem;
+    }
+    .pic{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 100px;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+   
